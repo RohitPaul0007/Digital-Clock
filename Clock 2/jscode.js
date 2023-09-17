@@ -5,7 +5,7 @@ let hours = time.querySelector(".hours");
 let minutes = time.querySelector(".minutes");
 let seconds = time.querySelector(".seconds");
 
-function updateClock() {
+function updateTime() {
   let now = new Date();
   let hoursText = now.getHours();
   let minutesText = now.getMinutes();
@@ -23,9 +23,7 @@ function updateClock() {
     secondsText = "0" + secondsText;
   }
 
-  hours.innerHTML = hoursText + ":";
-  minutes.innerHTML = minutesText + ":";
-  seconds.innerHTML = secondsText;
+ time.innerHTML = hoursText + ":"+ minutesText + ":" + secondsText;
 }
 
 function updateDate() {
@@ -45,8 +43,8 @@ function updateDate() {
   date.innerHTML = day + ordinals + " " + months[month] + ", " + year;
 }
 
-updateClock();
+updateTime();
 updateDate();
 
-setInterval(updateClock, 1000);
+setInterval(updateTime, 1000);
 setInterval(updateDate, 1000);
