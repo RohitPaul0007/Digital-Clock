@@ -1,4 +1,5 @@
-let time = document.querySelector(".time");
+
+    let time = document.querySelector(".time");
     let dateTime = document.querySelector(".date-time");
 
     function updateClock() {
