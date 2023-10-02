@@ -3,7 +3,7 @@
     let dateTime = document.querySelector(".date-time");
 
     function updateClock() {
-      // GET THE CURRENT TIME, DAY  , MONTH AND YEAR
+      
       let now = new Date();
       let hours = now.getHours();
       let minutes = now.getMinutes();
